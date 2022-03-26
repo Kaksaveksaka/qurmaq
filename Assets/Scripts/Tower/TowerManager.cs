@@ -147,7 +147,7 @@ public class TowerManager : MonoBehaviour
 
     void HandleBlockDropped(object sender, BlockEventArgs e) // game over
     {
-        if (!e.transform.parent.name.Contains("Row #1"))
+         if (e.transform.parent.name!="Row #1 (0)")
             State = TowerState.FALLING;
     }
 
